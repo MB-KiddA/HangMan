@@ -129,6 +129,9 @@ def hangman():
         s_print(f"\nOOF You Lost! The Word is:' {word} '!!")
         Retry()
         
+    if len(word_letters) == 0:
+        s_print('CONGRATS! YOU WIN!')
+        Retry()
 
 if __name__ == '__main__':
     hangman()
